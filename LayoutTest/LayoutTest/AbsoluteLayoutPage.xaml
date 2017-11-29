@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutTest.AbsoluteLayoutPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!-- 左からの位置、上からの位置、幅、高さ -->
+            <Button Text="RelativeLayoutPageへ" x:Name="btnHrefToRelative" AbsoluteLayout.LayoutBounds="10, 10, 200, 50"/>
+            <Label Text="PanzerVor!" BackgroundColor="AliceBlue" AbsoluteLayout.LayoutBounds="10, 100, 150, 75"/>
+            <Label Text="PanzerVor!" BackgroundColor="Aqua" AbsoluteLayout.LayoutBounds="30, 130, 150, 75"/>
+            <Label Text="PanzerVor!" BackgroundColor="Azure" AbsoluteLayout.LayoutBounds="50, 150, 150, 75"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

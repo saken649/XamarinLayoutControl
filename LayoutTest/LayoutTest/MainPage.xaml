@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LayoutTest"
+             x:Class="LayoutTest.MainPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="PanzerVor!" BackgroundColor="Aqua"/>
+            <Label Text="PanzerVor!" BackgroundColor="LawnGreen"/>
+            <Label Text="PanzerVor!" BackgroundColor="DarkSlateBlue"/>
+
+            <!-- Paddingは左からスタート -->
+            <StackLayout Padding="10, 20, 30, 40" Spacing="5" BackgroundColor="Silver">
+                <StackLayout Orientation="Horizontal">
+                    <!-- 左 -->
+                    <StackLayout Orientation="Vertical" Padding="10" Spacing="10" BackgroundColor="Aqua">
+                        <Label Text="PanzerVor!" BackgroundColor="Aquamarine"/>
+                        <Label Text="PanzerVor!" BackgroundColor="Aquamarine"/>
+                        <Label Text="PanzerVor!" BackgroundColor="Aquamarine"/>
+                    </StackLayout>
+                    <!-- 右 -->
+                    <StackLayout Orientation="Vertical" Padding="10" Spacing="10" BackgroundColor="OrangeRed">
+                        <Label Text="PanzerVor!" BackgroundColor="Aquamarine"/>
+                        <Label Text="PanzerVor!" BackgroundColor="Aquamarine"/>
+                        <Label Text="PanzerVor!" BackgroundColor="Aquamarine"/>
+                    </StackLayout>
+                </StackLayout>
+                <!--<Label Text="PanzerVor!" BackgroundColor="Aqua"/>
+                <Label Text="PanzerVor!" BackgroundColor="Aqua"/>
+                <Label Text="PanzerVor!" BackgroundColor="Aqua"/>-->
+            </StackLayout>
+            <Button Text="AbsoluteLayoutPageへ" x:Name="btnHrefToAbsolute"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
